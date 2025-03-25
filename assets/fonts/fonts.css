@@ -1,0 +1,77 @@
+/* Font Rajdhani */
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(./rajdhani/Rajdhani-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(./rajdhani/Rajdhani-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(./rajdhani/Rajdhani-Medium.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(./rajdhani/Rajdhani-SemiBold.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./rajdhani/Rajdhani-Bold.ttf) format('truetype');
+}
+
+/* Font Rubik */
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Regular.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Regular.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Medium.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Medium.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Medium.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Medium.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(./rubik/static/Rubik-Regular.ttf) format('truetype');  
+  font-style: normal;
+  font-weight: 900;
+}  
+  
+  

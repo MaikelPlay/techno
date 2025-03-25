@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>UD 5 - Ejercicio 1</title>
+  <!-- Icono que se muestra en la pestaña del navegaador -->	
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+  <!-- Flaticon -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--==================================================-->
+  <!-- SECTION MAIN HEADER -->
+  <!--==================================================-->
+
+  <header id="main-header">
+    <!-- Tomar como referencia la barra en Components -> Navbar -> Supported content (pero usar un .container, no un .container-fluid) -->
+    <nav class="navbar fixed-top p-4 navbar-expand-lg navbar-dark bg-dark">       
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/img/logo.png" alt="Navbar logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mt-4 mt-lg-0 mb-2 mb-lg-0"> <!-- .ms-auto para alinear a la derecha -->
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item ms-5 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                <li><a class="dropdown-item" href="#">Service 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Other services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">IT Solutions</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!--<form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+    <nav>
+        <a href="#"><img src="assets/img/logo.png" alt="Navbar logo"></a>
+        
+    </nav>
+  </header>
+
+  <!--==================================================-->
+  <!-- SECTION SLIDER -->
+  <!--==================================================-->
+
+    <!-- Tomar como referencia el carrusel en Components -> Carousel -> With captions -->
+    <!-- Agregar a los ".carousel-caption h5" las clases .h1 y .text-uppercase -->
+    <!-- Agregar a los ".carousel-caption p" las clases .d-sm-none, .d-md-block, .mt-4, .mb-5 y .fs-4 -->
+    <section id="slider">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/slider-1.jpg" class="d-block w-100" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1 text-uppercase">First slide label</h1>
+              <p class="d-sm-none d-md-block mt-4 mb-5 fs-4">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slider-2.jpg" class="d-block w-100" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1 text-uppercase">Second slide label</h1>
+              <p class="d-sm-none d-md-block mt-4 mb-5 fs-4">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slider-3.jpg" class="d-block w-100" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1 text-uppercase">Third slide label</h1>
+              <p class="d-sm-none d-md-block mt-4 mb-5 fs-4">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+  <!--==================================================-->
+  <!-- SECTION SERVICES -->
+  <!--==================================================-->
+
+  <section id="services">
+
+      <div class="container">
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+          <div class="section-header">
+            <h5 class="header-text">Services</h5>
+          </div>          
+          <div class="section-title">
+            <h1>WE SERVE THE PERFECT</h1>
+            <h1>PIXEL <span>SOLUTIONS</span></h1>				
+          </div>
+          </div>
+        <div class="col-md-6">
+          <div class="section-text">
+            <p>Uniquely unleash client-centered relationships and world-class alignments Compellingly impact 
+            premier enterprise quality vectors whereas client has functionalities. Seamlessly benchmark</p>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="row">
+        <div class="col-md-6 col-xl-3 mb-3">
+          <!--cada caja .card la clase .h-100, para que todas las tarjetas tengan la misma altura independientemente de la altura de su contenido -->
+          <div class="service-box card h-100 p-4">
+            <div class="service-icon">
+              <i class="flaticon-brain-1"></i>
+            </div>
+            <div class="card-body service-info">
+              <h2 class="card-title service-title">DIGITAL SEO CONSULTANCY</h2>
+              <hr class="service-separator">
+              <p class="card-text">Dramatically simplify to proof a data before high mindshare done.</p>
+            </div>
+            <div class="card-footer service-button">
+              <a href="#">READ MORE <span><i class="fas fa-angle-double-right"></i></span></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-xl-3 mb-3">
+          <div class="service-box card h-100 p-4">
+            <div class="service-icon">
+              <i class="flaticon flaticon-code"></i>
+            </div>
+            <div class="card-body service-info">
+              <h2 class="card-title service-title">APPS INTERFACE DESIGN</h2>
+              <hr class="service-separator">
+              <p class="card-text">Dramatically simplify to proof a data before high mindshare done.</p>
+            </div>
+            <div class="card-footer service-button">
+              <a href="#">READ MORE <span><i class="fas fa-angle-double-right"></i></span></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-xl-3 mb-3">
+          <div class="service-box card h-100 p-4">
+            <div class="service-icon">
+              <i class="flaticon-pen"></i>
+            </div>
+            <div class="card-body service-info">
+              <h2 class="card-title service-title">WEBSITE DEVELOPMENT</h2>
+              <hr class="service-separator">
+              <p class="card-text">Dramatically simplify to proof a data before high mindshare done.</p>
+            </div>
+            <div class="card-footer service-button">
+              <a href="#">READ MORE <span><i class="fas fa-angle-double-right"></i></span></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-xl-3 mb-3">
+          <div class="service-box card h-100 p-4">
+            <div class="service-icon">
+              <i class="flaticon-chat"></i>
+            </div>
+            <div class="card-body service-info">
+              <h2 class="card-title service-title">UI DATABASE &amp; BIG DATA DESIGN</h2>
+              <hr class="service-separator">
+              <p class="card-text">Dramatically simplify to proof a data before high mindshare done.</p>
+            </div>
+            <div class="card-footer service-button">
+              <a href="#">READ MORE <span><i class="fas fa-angle-double-right"></i></span></a>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <!--==================================================-->
+  <!-- SECTION INFO -->
+  <!--==================================================-->
+
+  <section id="info" class="bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="faqs-wrapper col-lg-6 mt-5">
+          <div class="section-header">
+            <h5 class="header-text">FAQs</h5>
+          </div>
+          <!-- Tomar como referencia el acordeón en Components -> Accordion -> Example (primer ejemplo) -->
+          <!-- Cambiar id accordionExample por mainAccordion, y #accordionExample por #mainAccordion en los atributos correspondientes -->
+          <div class="accordion" id="mainAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Frequently asked question 1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#mainAccordion">
+                <div class="accordion-body">
+                  This is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Frequently asked question 2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#mainAccordion">
+                <div class="accordion-body">
+                  This is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Frequently asked question 3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#mainAccordion">
+                <div class="accordion-body">
+                  This is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe-wrapper col-lg-6 mt-5"><!--mt-lg-0 Si lo pongo me descuadra la caja subscribe y no están en la misma altura.-->
+          <div class="section-header">
+            <h5 class="header-text">Subscribe</h5>
+          </div>
+          <div class="section-title">
+            <h1>TECHNO IS THE BEST IT</h1>
+            <h1>AGENCY <span>IN WORLD</span></h1>
+          </div>
+          <div class="subscribe mt-5">
+            <!-- Tomar como referencia el Input group en Forms -> Input group -> Sizing (tercer Input group, de tamaño -lg) -->
+            <div class="input-group input-group-lg">
+              <span class="input-group-text" id="inputGroup-sizing-lg">Subscribe!</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="email@example.com">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================================================-->
+  <!-- SCROLL UP -->
+  <!--==================================================-->
+
+  <div class="top-wrap">
+    <a id="scrollUp" class="go-top" href="#top">
+      <i class="bi-arrow-up"></i>
+      <div class="go-top-cover"></div>
+    </a>
+  </div>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

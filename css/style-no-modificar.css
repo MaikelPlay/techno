@@ -1,0 +1,285 @@
+@import '../assets/fonts/fonts.css';
+
+:root {
+	/* Fuentes */
+	--font-primary: Rubik, sans-serif !important;
+	--font-secondary: Rajdhani, sans-serif !important;
+}
+body {
+	font-family: var(--font-primary);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #fff;	
+}
+/* ++ BOOTSTRAP : Clases */
+  a {
+    /* Modificaciones */
+    text-decoration: none;
+  }
+  hr {
+    /* Modificaciones */  
+    background-color: #fff;
+  }
+/* -- BOOTSTRAP */
+
+/* 
+ * *************************************************************************
+ * MAIN HEADER
+ * *************************************************************************
+ */
+
+#main-header nav {
+	box-shadow: 0px 3px 11.16px 0.84px rgba(0, 0, 0, 0.1);
+}
+
+/* ++ BOOTSTRAP : Clases del Componente Navbar */
+  .nav-link {
+    /* Modificaciones */  
+      color: #fff !important;
+    /* Inserciones */
+    font-family: var(--font-secondary);
+    font-weight: 700;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover, 
+  .navbar-dark .navbar-nav .nav-link:focus {
+    /* Inserciones */
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 60%);
+  }
+  .navbar-dark .navbar-nav .show > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.active {
+    /* Inserciones */
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 60%);
+  }
+/* -- BOOTSTRAP */
+
+/* ++ BOOTSTRAP : Clases del Componente Dropdowns */
+  .dropdown-menu {
+    /* Modificaciones */ 
+    background-color: #191919;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+  .dropdown-item {
+    /* Modificaciones */ 
+    color: #fff;
+    background-color: #191919;
+    /* Inserciones */
+    font-family: var(--font-secondary);
+  }
+  .dropdown-item:hover, .dropdown-item:focus {
+    /* Modificaciones */ 
+    color: #fff;
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 60%);
+  }
+/* -- BOOTSTRAP */
+
+/* 
+ * *************************************************************************
+ * SERVICES
+ * *************************************************************************
+ */
+
+#services {
+	background: #212123;
+	padding: 100px 0;
+}
+
+.section-header h5 {
+  font-family: var(--font-secondary);
+  position: relative;   
+  color: #ed2c41;
+  font-size: 20px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-header h5:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #ed2c41;
+  right: -46px;
+  top: 15px;
+}
+
+.section-title {
+	font-family: var(--font-secondary);
+  margin-bottom: 32px;
+}
+.section-title h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+}
+.section-title span {
+  color: #ed2a22;
+}
+.section-title p {
+  margin: 15px 0 0;
+}
+
+.service-box {
+  background-color: #191919;
+}
+.service-icon {
+  padding: 16px;
+}
+.service-icon i {
+  font-size: 52px;
+  color: #ed381f;
+  display: inline-block;
+  margin: 0;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  background-color: #252526;
+  text-align: center;
+  border-radius: 50%;
+}
+.service-separator {
+	background: #ed381f;
+	width: 43px;
+	height: 2px;
+	opacity: 1;
+}
+.service-title {
+	font-family: var(--font-primary);
+	font-size: 16px;
+	line-height: 28px;
+}
+.service-button span {
+  display: inline-block;
+  padding-left: 6px;
+}
+.service-button a {
+	display: inline-block;
+	font-family: 'Rajdhani';
+	font-weight: 700;
+	color: #ed2a22;
+	transition: .5s;
+}
+.service-button a:hover {
+	color: #fff;
+}
+
+/* ++ BOOTSTRAP : Clases del Componente Card */
+  .card {
+    /* Modificaciones */
+    background-color: #191919;
+    border-radius: 5px;
+    /* Inserciones */
+    margin-bottom: 20px;
+  }
+  .card-title {
+    /* Inserciones */
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 24px 0 38px;
+  }
+  .card-body {
+    /* Inserciones */
+    color: #fff;
+  }
+  .card-footer {
+    /* Modificaciones */
+    background-color: transparent;  
+    border: none;
+  }
+/* -- BOOTSTRAP */
+
+/* 
+ * *************************************************************************
+ * ABOUT-FAQs
+ * *************************************************************************
+ */
+
+#about-faqs {
+	background-image: url(../assets/img/info.jpg);
+	padding: 100px 0;
+}
+
+/* ++ BOOTSTRAP : Clases del Componente Progress */
+  .progress {
+    /* Modificaciones */
+    height: 0.5rem;  
+    background-color: #4b4c59;  
+  }
+  .progress-bar {
+    /* Modificaciones */
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 100%) !important;  
+  }
+/* -- BOOTSTRAP */
+
+/* ++ BOOTSTRAP : Clases del Componente Accordion */
+  .accordion-button {
+    /* Modificaciones */
+    font-size: 1.1rem;    
+    color: #fff; 
+    background-color: #191919;
+    /* Inserciones */
+    font-family: var(--font-secondary);
+    font-weight: 600;
+  }
+  .accordion-button:not(.collapsed) {
+    /* Modificaciones */
+    color: #fff; 
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 100%) !important;    
+  }
+  .accordion-button:focus {
+    /* Modificaciones */
+    box-shadow: 0 0 0 .25rem rgba(125,125,125,.25);
+  }
+  .accordion-item {
+    /* Modificaciones */
+    background-color: transparent; 
+  }
+/* -- BOOTSTRAP */
+
+/* 
+ * *************************************************************************
+ * SUBSCRIBE
+ * *************************************************************************
+ */
+
+#subscribe {
+  background: #212123;
+	padding: 100px 0;
+}
+
+/* ++ BOOTSTRAP : Clases de Forms */
+  .input-group-lg > .form-control,
+  .input-group-lg > .form-select,
+  .input-group-lg > .input-group-text,
+  .input-group-lg > .btn {
+    /* Modificaciones */
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+  }
+  .input-group-text {
+    /* Modificaciones */
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #ed2b22 0%, #ed431d 100%);
+    border-color: #ed2a22; 
+    /* Inserciones */
+    font-family: var(--font-secondary);
+  }
+
+  .form-control {
+    /* Modificaciones */
+    font-size: 1.25rem !important;  
+    color: #fff;
+    background-color: #212123;
+    border: 1px solid #444c51;
+  }
+  .form-control:focus {
+    /* Modificaciones */
+    color: #fff;
+    background-color: #212123;    
+    border-color: #444c51;
+    box-shadow: 0 0 0 .25rem rgba(125,125,125,.25);    
+  }
+/* -- BOOTSTRAP */

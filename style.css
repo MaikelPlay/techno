@@ -1,0 +1,70 @@
+@import './assets/fonts/fonts.css';
+@import './css/style-no-modificar.css';
+
+/*
+********************************************************************************
+# SCROLL UP
+********************************************************************************
+*/
+
+.top-wrap .go-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;  
+  text-align: center;
+  border-radius: 100%; 
+  background: #ed381f;  
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.9s ease-out 0s; 
+}
+.top-wrap .go-top:hover {
+  background-color: #222;
+}
+.margin-bottom {
+  margin-bottom: 50px;
+  color:black
+}
+
+.top-wrap .go-top i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: #fff;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out 0s; 
+}
+
+.top-wrap .go-top-cover {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  background-color: #fb8a42;
+  border-radius: 100%;
+  
+  /* --- Apartado 7.1 --- */
+  animation-name: ripple;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+
+}
+
+/* ANIMACIÓN */
+
+/* --- Apartado 7.2 --- */
+
+@keyframes ripple {
+  0%   { opacity: 1;   transform: scale(0); }
+  35%  { opacity: 1;   transform: scale(0); }
+  50%  { opacity: 0.5; transform: scale(1.5); }
+  100% { opacity: 0;   transform: scale(2); }
+}
